@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form method="POST" action="/new" >
+        <h1>Send a new message!</h1>
+        <div class="inputbox">
+            <label for="user_input">
+                <p>Please write your name here</p>
+                <input type="text" name="user_input" id="user_input" required maxlength="20">
+            </label>
+        </div>
+        <div class="inputbox">
+            <label for="message_input">
+                <p>Please write your message here</p>
+                <input type="text" name="message_input" id="message_input" required maxlength="100">
+            </label>
+        </div>
+        <button type="submit">Submit!</button>
+    </form>
+</body>
+</html>

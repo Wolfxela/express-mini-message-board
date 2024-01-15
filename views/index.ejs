@@ -5,7 +5,19 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
+    <%= %>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+    <ul>
+
+      <% messages.forEach(function(message){%>
+      <li>
+        <h2 class="from">New message from <%= message.user %>!</h2>
+        <p class="message"><%= message.content %></p>
+        <p class="date">Message received on <%= message.date %></p>
+      </li>
+      <% })%>
+
+    </ul>
   </body>
 </html>
